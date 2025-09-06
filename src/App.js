@@ -318,7 +318,7 @@ const clearTable = () => {
 
     <BrowserRouter>
     <Routes>
-    <Route  path='/' element = {<Home addUsers = {addUsers} users = {users} getName = {getName}      />}         />
+    <Route basename="/financeApp" path='/' element = {<Home addUsers = {addUsers} users = {users} getName = {getName}      />}         />
     {users.map((val, index) => {
 
 return <Route   path={`/user/${val.userName}`} element={<Table row={row} id = {val.id}  defaultRow = {defaultRow} userName = {val.userName} users={users} setFlag ={setFlag} index={index} Ticker = {val.Ticker} Quantity={val.Quantity} price={val.price} ExpectedLose={val.ExpectedLose} ExitPrice={val.ExitPrice} stopLose={val.stopLose} setUsers={setUsers} deleteAll={deleteAll} clearTable={clearTable} data={data} saveData={saveData} Tickers={val.Tickers} addTickers={addTickers} delRow={delRow} setTickers={setTickers} />} />
