@@ -2,7 +2,7 @@
   "name": "finance",
   "version": "0.1.0",
   "private": true,
-   "homepage": "http://oshri4455.github.io/financeApp",
+  "homepage": "https://oshri4455.github.io/financeApp",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -37,7 +37,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "deploy":"npm run build && gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
